@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vue</title>
+	
+</head>
+<body>
+
+	<main>
+			<ul>			
+				<li v-for="tarea in tareas"  > 
+					{{ tarea }}
+
+				</li>
+			</ul>
+			
+				<input type="text" placeholder="Ingresar tarea" v-on:keyup.enter="agregartarea" v-model="nuevatarea">
+				<input type="button" value="enviar" v-on:click="agregartarea" name="">
+			
+				
+			</form>
+				<form v-on:submit.prevent="agregartarea">
+				<input type="text" placeholder="Ingresar tarea" v-on:keyup.enter="agregartarea" v-model="nuevatarea">			
+				<input type="submit" value="enviar 2" v-on:click="agregartarea" name="">
+				
+			</form>
+		
+	</main>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script type="text/javascript" src="main6.js"></script>
+</body>
+</html>

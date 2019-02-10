@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vue</title>
+	
+</head>
+<body>
+
+	<main>
+		<h1>{{ mensajealrever }}</h1>
+		<h2>{{ mensaje }}</h2>
+			<ul>
+				<li v-for="tarea in tareas"> 
+					{{ tarea.descripcion }}
+
+				</li>
+			</ul>
+
+			<ul>
+				<li v-for="tarea in ordenarprioridad"> 
+					{{ tarea.descripcion }}
+
+				</li>
+			</ul>
+
+			<ul>
+				<li v-for="tarea in ordenar"> 
+					{{ tarea.descripcion }}
+
+				</li>
+			</ul>
+
+			<pre> {{ $data }} </pre>
+	</main>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script type="text/javascript" src="main7.js"></script>
+</body>
+</html>

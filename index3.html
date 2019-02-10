@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vue</title>
+	
+</head>
+<body>
+	<main>
+		<h1 v-show="conectado"> Estoy conectado</h1>
+		<h1 v-if="si"> Estoy conectado</h1>	
+		<h2 v-if="edad < 18 "> No</h2>	
+		<h2 v-else-if="edad < 200 "> mortal</h2>	
+		<h2 v-else>ingreso</h2>	
+		<pre>{{ $data }}</pre>
+
+		<template v-if="conectado">
+			<h3>Bienvenido</h3>
+			<ul>
+				<li> <a href="#">Enlace</a> 
+				 <a href="#">Enlace</a> 
+				 <a href="#">Enlace</a> 
+				</li>
+			</ul>
+		</template>
+		
+	</main>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script type="text/javascript" src="main4.js"></script>
+</body>
+</html>

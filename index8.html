@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vue</title>
+	<style>
+		li{
+			cursor: pointer;
+		}
+		.completado{
+			text-decoration: line-through;
+		}
+	</style>
+	
+</head>
+<body>
+	<main>
+		
+			<h1>Tareas</h1>
+			<h2> {{ contagregado.length }} completas </h2>
+			<ul>
+				<li v-bind:class="{completado: tarea.prioridad}"  @click="completartarea(tarea)" 
+				v-for="tarea in tareas"> 
+					{{ tarea.descripcion }}
+
+				</li>
+			</ul>
+
+
+			<pre>{{$data}}</pre>
+	
+		
+	</main>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script type="text/javascript" src="main9.js"></script>
+</body>
+</html>
